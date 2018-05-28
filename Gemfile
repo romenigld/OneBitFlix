@@ -64,3 +64,6 @@ gem 'devise'
 gem 'fast_jsonapi', git: "https://github.com/Netflix/fast_jsonapi", branch: "dev"
 # Pesquisas dentro do Postgresql
 gem 'pg_search'
+gem 'aws-sdk-s3'
+gem 'webpacker', '~> 3.5'
+gem 'foreman'
