@@ -6,10 +6,10 @@
                         <strong>Netflix.com</strong>
                        </a>
       </v-flex>
-      <v-flex xs-12 pb-2 text-xs-center white--text>
-        <p>3º Semana Super Full Stack -- <a href="https://onebitcode.com" class="white--text" target="_blank">
-                                          <strong>Onebitcode.com</strong>
-                                         </a>
+      <v-flex xs12 pb-2 text-xs-center white--text>
+        <p>3º Semana Super Full Stack — <a href="https://onebitcode.com" class="white--text" target="_blank">
+                                          <strong>OneBitCode.com</strong>
+                                        </a>
         </p>
       </v-flex>
     </v-layout>
@@ -19,7 +19,7 @@
 <script>
   export default {
     data () {
-      return { }
+      return {  }
     }
   }
 </script>

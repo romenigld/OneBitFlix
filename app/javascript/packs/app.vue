@@ -2,19 +2,21 @@
   <v-app>
     <Header/>
     <v-content>
-      <router-view></router-view>
+      <router-view :key="$route.fullPath"></router-view>
     </v-content>
     <Footer/>
   </v-app>
 </template>
 
 <script>
-  import Header from './components/shared/header.vue';
   import Footer from './components/shared/footer.vue';
+  import Header from './components/shared/header.vue';
 
   export default {
     data () {
-      return { }
+      return {
+
+      }
     },
     components: {
       'Footer': Footer,
@@ -26,6 +28,5 @@
 <style>
   #app {
     background-color: #0c0c0c !important;
-
   }
 </style>

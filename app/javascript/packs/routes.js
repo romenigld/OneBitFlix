@@ -1,4 +1,4 @@
-import Vue from 'vue';
+import Vue from 'vue'
 import VueRouter from 'vue-router';
 Vue.use(VueRouter);
 
@@ -7,7 +7,7 @@ import WatchIndex from './components/watch/index.vue';
 
 const router = new VueRouter({
   mode: 'history',
-  routes:[
+  routes: [
     { path: '/', component: HomeIndex },
     { path: '/watch/:id', component: WatchIndex }
   ]

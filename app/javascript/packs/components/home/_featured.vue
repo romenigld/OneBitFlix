@@ -4,24 +4,26 @@
       <v-flex sm12 md4 offset-md1 class="content" fill-height>
         <v-layout row wrap>
 
-            <v-flex sm12 md10>
-              <p class="title">{{ movie.title}}</p>
-            </v-flex>
-            <v-flex sm6 md4>
-              <v-btn color="black" large :to="'/watch/' + movie.id">Assistir</v-btn>
-            </v-flex>
-            <v-flex sm6 md4>
-              <v-btn color="black" large>+ Minha Lista </v-btn>
-            </v-flex>
-            <v-flex sm12 md12>
-              <p class="subtitle">{{ movie.description}}</p>
-            </v-flex>
+          <v-flex sm12 md10>
+            <p class="title">{{ movie.title }}</p>
+          </v-flex>
 
-          </v-layout>
-        </v-flex>
-      </v-layout>
-    </v-parallax>
-  </template>
+          <v-flex sm6 md4>
+            <v-btn color="black" class="white--text" large :to="'/watch/' + movie.id">Assistir</v-btn>
+          </v-flex>
+          <v-flex sm6 md4>
+            <v-btn color="black" class="white--text" large>+ Minha Lista</v-btn>
+          </v-flex>
+
+          <v-flex sm12 md12>
+            <p class="subtitle">{{ movie.description }}</p>
+          </v-flex>
+
+        </v-layout>
+      </v-flex>
+    </v-layout>
+  </v-parallax>
+</template>
 
 <script>
   export default {
@@ -39,7 +41,7 @@
 
 <style scoped>
   .content {
-    margin-top: 120px
+    margin-top: 120px;
   }
   .title {
     font-size: 50px !important;
